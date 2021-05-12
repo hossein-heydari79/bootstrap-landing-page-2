@@ -7,8 +7,89 @@
 html,
 body {
     width: 100%;
+    // background-color: red;
 }
 
-html {
-    font-size: 62.5%;
+body {
+    font-family: Nunito;
+    height: 1000px;
+}
+
+.navbar {
+    font-weight: 700;
+    transition: all 0.4s;
+}
+
+.navbar-brand {
+    color: rgb(202, 202, 202) !important;
+}
+
+.nav-link {
+    color: rgb(202, 202, 202) !important;
+}
+
+.header {
+    width: 100%;
+    min-height: 40rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../images/bg-masthead.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.header-title {
+    font-size: 7vw;
+    letter-spacing: 1rem;
+    color: rgb(157, 157, 157);
+    padding: 0;
+    margin: 0;
+}
+
+.header-des {
+    font-size: 1.5vw;
+    color: rgb(180, 180, 180);
+    width: 60%;
+}
+
+.header-btn {
+    padding: 1.25rem 2rem;
+    background-color: rgb(84, 140, 136);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: Nunito;
+    font-size: 80%;
+    letter-spacing: 2px;
+}
+
+.scroll {
+    background-color: white !important;
+}
+
+.scroll-bg {
+    color: black !important;
+}
+
+.scroll-bg-g {
+    color: gray !important;
+}
+
+@media screen and (max-width:990px) {
+    .navbar {
+        background-color: white !important;
+    }
+    .navbar-brand {
+        color: black !important;
+    }
+    .nav-link {
+        color: rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-des {
+        font-size: 2.5vw;
+    }
 }
