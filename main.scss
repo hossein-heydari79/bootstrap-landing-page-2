@@ -149,7 +149,7 @@ html {
 input {
     padding: 1.25rem 2rem;
     height: auto;
-    width: 70%;
+    width: 40vw;
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
@@ -169,6 +169,41 @@ input {
     color: white;
     border: none;
     outline: none;
+}
+
+.footer {
+    width: 100%;
+    min-height: 550px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-btn {
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        color: rgb(95, 95, 95);
+    }
+    &:hover {
+        text-decoration: none;
+        i {
+            color: rgb(129, 129, 129);
+        }
+    }
+}
+
+.x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:990px) {
@@ -221,5 +256,18 @@ input {
 @media screen and (max-width:600px) {
     .header-des {
         font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .x {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input {
+            margin: 20px 0;
+            width: 90vw;
+        }
     }
 }
