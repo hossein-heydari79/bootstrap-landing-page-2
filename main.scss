@@ -84,9 +84,6 @@ html {
     padding-top: 100px;
     height: auto;
     background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-    .row1 {
-        width: 65% !important;
-    }
     .about-img {
         margin-top: 80px;
         width: 100%;
@@ -94,6 +91,47 @@ html {
             width: 100%;
         }
     }
+}
+
+.row1 {
+    width: 65% !important;
+}
+
+.pro {
+    margin-top: 150px;
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.center div {
+    border-left: 0.5rem solid #64a19d;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.db {
+    padding: 0 60px;
+    div {
+        hr {
+            border-color: #64a19d;
+            border-width: 0.25rem;
+            width: 30%;
+        }
+    }
+}
+
+.rtl {
+    text-align: right;
+}
+
+.top {
+    margin: 0;
 }
 
 @media screen and (max-width:990px) {
@@ -105,6 +143,41 @@ html {
     }
     .nav-link {
         color: rgba(0, 0, 0, 0.3) !important;
+    }
+    .row1 {
+        width: 100% !important;
+    }
+    .pro {
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .center {
+        text-align: center;
+        div {
+            border: none;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .db {
+        padding: 30px;
+        margin: 0 auto;
+        text-align: center;
+        div {
+            text-align: center;
+            hr {
+                display: none;
+            }
+        }
+    }
+    .top {
+        margin-top: 50px !important;
     }
 }
 
