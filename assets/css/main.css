@@ -14,6 +14,10 @@ body {
   height: 1000px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   font-weight: 700;
   transition: all 0.4s;
@@ -73,6 +77,25 @@ body {
 
 .scroll-bg-g {
   color: gray !important;
+}
+
+.about {
+  padding-top: 100px;
+  height: auto;
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about .row1 {
+  width: 65% !important;
+}
+
+.about .about-img {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.about .about-img img {
+  width: 100%;
 }
 
 @media screen and (max-width: 990px) {
