@@ -13,6 +13,7 @@ body {
 body {
     font-family: Nunito;
     height: 1000px;
+    background-color: rgb(248, 249, 250);
 }
 
 html {
@@ -132,6 +133,42 @@ html {
 
 .top {
     margin: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../images/bg-signup.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    padding: 1.25rem 2rem;
+    height: auto;
+    width: 70%;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.sub {
+    padding: 1.25rem 2rem;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+    background-color: rgb(100, 161, 157);
+    border-radius: 3px;
+    color: white;
+    border: none;
+    outline: none;
 }
 
 @media screen and (max-width:990px) {
